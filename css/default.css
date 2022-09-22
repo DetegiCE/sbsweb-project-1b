@@ -1,3 +1,8 @@
+:root {
+    --main: #3F51B5;
+    --main-1: #303F9F;
+}
+
 /* 모바일용 CSS */
 /* 기본 CSS */
 .container {
@@ -6,7 +11,7 @@
     margin: 0 auto;
 }
 
-.cfixed:after {
+.cfixed:after, .container:after {
     display: block;
     content: "";
     clear: both;
@@ -14,7 +19,7 @@
 
 .sec-tit {
     font-size: 2.625em;
-    color: #3F51B5;
+    color: var(--main);
     font-weight: normal;
 }
 
@@ -26,9 +31,83 @@
     background: #EEE;
 }
 
+.m-divider {
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 77px;
+    background: var(--main);
+}
+
+.blind {
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+/* 모바일 - 헤더 영역 CSS */
+.header {
+    position: relative;
+    padding: 18px 5%;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo a {
+    font-size: 1.625em;
+    color: var(--main);
+    font-weight: normal;
+}
+
+.header .gnb {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--main);
+}
+
+.header .gnb li {
+    border-bottom: 1px solid var(--main-1);
+}
+
+.header .gnb li a {
+    display: block;
+    font-size: 0.875em;
+    padding: 14px 0 14px 5%;
+    color: white;
+}
+
+.header .menu-toggle-btn {
+    float: right;
+    width: 20px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.header .menu-toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--main);
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+    margin: 5px 0;
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px) {
+    /* 기본 CSS */
     .divider {
+        margin-top: 124px;
+    }
+
+    .m-divider {
         margin-top: 124px;
     }
 }
