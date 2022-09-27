@@ -273,6 +273,55 @@
     line-height: 1.6;
 }
 
+/* 모바일 - 연락처 영역 CSS */
+.contact-section {
+    margin-top: 109px;
+}
+
+.contact-section .sec-tit {
+    margin-bottom: 47px;
+    text-align: center;
+}
+
+.contact-section .form-box .form input {
+    margin-bottom: 38px;
+    padding-bottom: 13px;
+}
+
+.contact-section .form-box .textarea textarea {
+    height: 160.5px;
+}
+
+.contact-section .form-box .send-btn {
+    margin-top: 36px;
+    text-align: right;
+}
+
+.contact-section .form-box .send-btn button {
+    border: 0;
+    background-color: var(--main);
+    color: #FFF;
+    padding: 15px;
+    font-family: 'Montserrat';
+    cursor: pointer;
+}
+
+/* 모바일 - 푸터 영역 CSS */
+.footer {
+    margin-top: 104px;
+}
+
+.footer iframe {
+    width: 100%;
+    height: 320px;
+}
+
+.footer p {
+    margin: 21px 0;
+    text-align: center;
+    color: var(--main);
+}
+
 /* 태블릿용 CSS */
 @media all and (min-width: 768px) {
     /* 기본 CSS */
@@ -376,6 +425,38 @@
     .blog-section .blog-list li:first-child {
         margin-left: 0;
     }
+
+    /* 태블릿 - 연락처 영역 CSS */
+    .contact-section {
+        margin-top: 261px;
+    }
+
+    .contact-section .sec-tit {
+        margin-bottom: 76px;
+    }
+
+    .contact-section .form-box .form,
+    .contact-section .form-box .textarea {
+        float: left;
+        width: 48.55324%;
+    }
+
+    .contact-section .form-box .textarea {
+        margin-left: 2.89352%;
+    }
+
+    .contact-section .form-box .form input:last-child {
+        margin-bottom: 0;
+    }
+
+    /* 태블릿 - 푸터 영역 CSS */
+    .footer iframe {
+        height: 450px;
+    }
+
+    .footer p {
+        margin: 34px 0;
+    }
 }
 
 /* PC용 CSS */
@@ -425,20 +506,64 @@
     .blog-section .sec-tit {
         text-align: left;
         float: left;
-        width: 25%;
+        width: 30%;
     }
 
     .blog-section .blog-list {
         float: right;
-        width: 75%;
+        width: 70%;
     }
 
     .blog-section .blog-list li {
-        width: 31.27572%;
-        margin-left: 3.08642%;
+        width: 31.12875%;
+        margin-left: 3.30688%;
     }
+    /*
+    전체 너비 = 960px
+    마진 제외한 실제 너비 = 960*90/100 = 864px
+    컨텐츠 부분의 너비 = 864*70/100 = 604.8px
+
+    사진 3개 -> 전체 564.8px = 개당 188.26667px
+    공간 2개 = 20px -> 전체 40px
+
+    사진 = 188.26667/604.8*100=31.12875%
+    공간 = 20/604.8*100=3.30688%
+    */
 
     .blog-section .blog-list li:first-child {
         margin-left: 0;
     }
+
+    /* PC - 연락처 영역 CSS */
+    .contact-section .sec-tit {
+        float: left;
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .contact-section .form-box {
+        float: right;
+        width: 70%;
+    }
+
+    .contact-section .form-box .form,
+    .contact-section .form-box .textarea {
+        width: 48.34656%;
+    }
+
+    .contact-section .form-box .textarea{
+        margin-left: 3.30688%;
+    }
+
+    /*
+    전체 너비 = 960px
+    실제 너비 = 960*90/100=864px
+    폼박스 너비 = 864*70/100=604.8px
+
+    컨텐츠 2개 = 584.8px -> 개당 292.4px
+    공간 1개 = 20px
+
+    컨텐츠 = 292.4/604.8*100=48.34656%
+    공간 = 20/604.8*100 = 3.30688%
+    */
 }
