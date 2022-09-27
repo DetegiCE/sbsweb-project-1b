@@ -341,6 +341,7 @@
     }
 
     .header .gnb {
+        display: block;
         position: static;
         float: right;
         width: auto;
