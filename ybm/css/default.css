@@ -65,12 +65,13 @@
 
 .c1 .c1-left .plan {
     height: 212px;
+    margin-right: 25px;
     background-color: midnightblue;
 }
 
 .c1 .c1-left .academy {
     height: 188px;
-    margin-top: 22px;
+    margin: 22px 25px 0 0;
     background-color: navajowhite;
 }
 
@@ -82,12 +83,13 @@
 
 .c1 .c1-mid .blog {
     height: 212px;
+    margin-right: 24px;
     background-color: olive;
 }
 
 .c1 .c1-mid .sample {
     height: 188px;
-    margin-top: 22px;
+    margin: 22px 24px 0 0;
     background-color: pink;
 }
 
@@ -100,4 +102,66 @@
 .c1 .c1-right .recruit {
     height: 422px;
     background-color: red;
+}
+
+/* 컨텐츠 2영역 CSS */
+.c2 {
+    display: flex;
+    height: 218.39px;
+    margin-bottom: 50px;
+    background-color: salmon;
+}
+
+.c2 .contact {
+    width: 283px;
+    margin: 25px 25px 0 0;
+    background-color: thistle;
+}
+
+.c2 .question {
+    width: 477px;
+    height: 180px;
+    margin: 27px 35px 0 0;
+    background-color: violet;
+}
+
+.c2 .social {
+    width: 205px;
+    height: 180px;
+    margin-top: 27px;
+    background-color: wheat;
+}
+
+/* 푸터 영역 CSS */
+.footer {
+    height: 422px;
+    padding: 25px 0 30px 0;
+    border-top: 1px solid var(--b-color);
+    background-color: yellowgreen;
+}
+
+.footer .copyright {
+    display: flex;
+    height: 232px;
+    margin-bottom: 10px;
+    background-color: aquamarine;
+}
+
+.footer .copyright .business {
+    width: 668px;
+    background-color: brown;
+}
+
+.footer .copyright .guarantee {
+    width: 258px;
+    height: 140px;
+    padding: 0 0 23px 23px;
+    border-left: 1px solid var(--b-color);
+    background-color: cornflowerblue;
+}
+
+.footer .banner {
+    height: 140px;
+    padding: 20px 0 20px 0;
+    background-color: darkgray;
 }
