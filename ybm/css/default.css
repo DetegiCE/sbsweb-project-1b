@@ -11,7 +11,6 @@
     width: 1000px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: aqua;
 }
 
 /* 헤더 영역 CSS */
@@ -22,17 +21,125 @@
 .header .hotbar {
     height: 33px;
     border-bottom: 1px solid var(--b-color);
-    background-color: bisque;
+}
+
+.hotbar .hotbar-list {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 13px;
+}
+
+.hotbar .hotbar-list li a {
+    display: block;
+    padding: 6px 0 7px 21px;
+    color: #777;
+}
+
+.hotbar .hotbar-list li:nth-child(3) a {
+    color: #333;
+    font-weight: bold;
+}
+
+.hotbar .hotbar-list li:nth-child(5) a img {
+    margin-bottom: -3px;
 }
 
 .header .info {
+    display: flex;
+    justify-content: space-between;
     height: 73px;
-    background-color: chocolate
 }
 
-.header .gnb {
+.info .info-right .mypage-list {
+    display: flex;
+}
+
+.mypage-list li a {
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    color: #333;
+}
+
+.mypage-list .mypage-nobox a {
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    padding: 24px 0;
+}
+
+.mypage-list .mypage-box a {
+    position: relative;
+    width: 71px;
+    height: 55px;
+    line-height: 55px;
+    padding: 24px 0;
+}
+
+.mypage-list .mypage-box a::before {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 73px;
+    width: 1px;
+    top: 0;
+    left: -1.6px;
+    background-color: var(--b-color);
+}
+
+.mypage-list li:nth-child(4) {
+    background: url('../images/s_images/ic_my.gif') center 15px no-repeat;
+}
+
+.mypage-list li:nth-child(4) a {
+    color: #FD7B28;
+}
+
+.mypage-list li:nth-child(5) {
+    position: relative;
+    background: url('../images/s_images/ic_fmn.gif') center 15px no-repeat;
+}
+
+.mypage-list li:nth-child(5)::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 73px;
+    width: 1px;
+    top: 0;
+    left: 70px;
+    background-color: var(--b-color);
+}
+
+.header .gnb-wrap {
     height: 45px;
-    background-color: darkkhaki;
+}
+
+.gnb-wrap .gnb {
+    display: flex;
+}
+
+.gnb-wrap .gnb li {
+    width: 142.8px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.gnb-wrap .gnb .gnb-1 {
+    background-color: #FD7B28;
+    border-left: 1px solid #FF690A;
+}
+
+.gnb-wrap .gnb .gnb-2 {
+    background-color: #888;
+    border-right: 1px solid #A0A0A0;
+}
+
+.gnb-wrap .gnb li a {
+    color: white;
+    font-weight: bold;
+    letter-spacing: -1px;
 }
 
 /* 슬라이더 영역 CSS */
@@ -106,6 +213,7 @@
 
 /* 컨텐츠 2영역 CSS */
 .c2 {
+    order: 5;
     display: flex;
     height: 218.39px;
     margin-bottom: 50px;
@@ -121,7 +229,7 @@
 .c2 .question {
     width: 477px;
     height: 180px;
-    margin: 27px 35px 0 0;
+    margin: 27px 10px 0 0;
     background-color: violet;
 }
 
@@ -134,6 +242,7 @@
 
 /* 푸터 영역 CSS */
 .footer {
+    order: 6;
     height: 422px;
     padding: 25px 0 30px 0;
     border-top: 1px solid var(--b-color);
