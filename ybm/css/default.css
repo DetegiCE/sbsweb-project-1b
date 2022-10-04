@@ -212,7 +212,63 @@
 .promotion {
     order: 3;
     height: 115px;
-    background-color: gold;
+}
+
+.promotion .promo-list {
+    display: flex;
+}
+
+.promo-list li {
+    width: 166.66px;
+    text-align: center;
+    height: 115px;
+    position: relative;
+}
+
+.promo-list li:not(:last-child)::after {
+    content: "";
+    height: 85px;
+    width: 1px;
+    background-color: var(--b-color);
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.promo-list li a {
+    display: block;
+    height: 100px;
+    color: #333;
+}
+
+.promo-list li a span {
+    display: block;
+    padding-top: 85px;
+    font-size: 15px;
+}
+
+.promo-list li:nth-child(1) {
+    background: url('../images/p_images/m_qmenu_ic1.gif') center 20px no-repeat;
+}
+
+.promo-list li:nth-child(2) {
+    background: url('../images/p_images/m_qmenu_ic2.gif') center 20px no-repeat;
+}
+
+.promo-list li:nth-child(3) {
+    background: url('../images/p_images/m_qmenu_ic4_1.gif') center 20px no-repeat;
+}
+
+.promo-list li:nth-child(4) {
+    background: url('../images/p_images/m_qmenu_ic5.gif') center 20px no-repeat;
+}
+
+.promo-list li:nth-child(5) {
+    background: url('../images/p_images/m_qmenu_ic7.png') center 20px no-repeat;
+}
+
+.promo-list li:nth-child(6) {
+    background: url('../images/p_images/m_qmenu_ic8.png') center 20px no-repeat;
 }
 
 /* 컨텐츠 영역 CSS */
