@@ -282,19 +282,117 @@
 .c1 .c1-left {
     width: 308px;
     padding: 25px 0 19px 0;
-    background-color: indigo;
 }
 
 .c1 .c1-left .plan {
     height: 212px;
     margin-right: 25px;
-    background-color: midnightblue;
+    background-color: #FD7B28;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.plan form h3 {
+    font-size: 17px;
+    padding: 15px 15px 30px 15px;
+}
+
+.plan form .plan-form {
+    padding: 0 10px 10px 10px;
+}
+
+.plan-form li {
+    height: 34px;
+    padding-bottom: 6px;
+}
+
+.plan-form li label {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0 5px;
+    letter-spacing: -1px;
+}
+
+.plan-form li select {
+    height: 100%;
+    background: url('../images/s_images/select_arr.png') right center no-repeat transparent;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 3px;
+    appearance: none;
+}
+
+.plan-form li:nth-child(1) select {
+    width: 211px;
+}
+
+.plan-form li:nth-child(2) select {
+    width: 83px;
+}
+
+.plan form .plan-search {
+    width: 100%;
+    height: 46px;
+    border-radius: 5px;
+    background: url('../images/s_images/ic_d_sch.png') 75px center no-repeat #EE5D01;
+    position: absolute;
+    bottom: 0;
+}
+
+.plan form .plan-search a {
+    display: block;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    height: 46px;
+    line-height: 46px;
 }
 
 .c1 .c1-left .academy {
     height: 188px;
     margin: 22px 25px 0 0;
-    background-color: navajowhite;
+    background: url('../images/s_images/main_bg_location.png') #EFF0F3 115% -20px no-repeat;
+}
+
+.academy h2 {
+    font-weight: normal;
+    padding: 28px 0 18px 0;
+    font-size: 20px;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+.academy .academy-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.academy .academy-list li a {
+    display: block;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 65px;
+    position: relative;
+
+    color: #333;
+    letter-spacing: 0px;
+    font-size: 15px;
+
+    transition: all 0.2s;
+}
+
+.academy .academy-list li a:hover {
+    background: url("../images/s_images/loca_bullet.png") center 16px no-repeat #FD7B28;
+    box-shadow: 0 10px 15px rgba(248, 113, 27, 30%);
+    margin-top: -5px;
+
+    color: white;
+    font-weight: bold;
 }
 
 .c1 .c1-mid {
