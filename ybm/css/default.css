@@ -641,27 +641,168 @@
     display: flex;
     height: 218.39px;
     margin-bottom: 50px;
-    background-color: salmon;
 }
 
 .c2 .contact {
     width: 283px;
     margin: 25px 25px 0 0;
-    background-color: thistle;
+}
+
+.c2 .contact h3 {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 13px;
+}
+
+.contact .contact-list li {
+    color: #333;
+    font-size: 14px;
+    letter-spacing: -1px;
+    background: url('../images/s_images/bl_cutomer.gif') left 2px no-repeat;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+.contact-list li .contact-emp {
+    color: #FD7B28;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.contact-list li .lunch-time {
+    color: #888;
+    font-size: 13px;
+}
+
+.contact-list li a img {
+    display: block;
+    padding-top: 5px;
 }
 
 .c2 .question {
     width: 477px;
     height: 180px;
     margin: 27px 10px 0 0;
-    background-color: violet;
+}
+
+.c2 .question > a {
+    display: block;
+    width: 435px;
+    height: 70px;
+    background: url('../images/p_images/bg_m_consult.jpg');
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    padding: 28px 20px;
+    color: #333;
+
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.c2 .question > a:hover {
+    border: 1px solid #FD7B28;
+    box-shadow: 0 2px 2px 1px rgba(100, 100, 100, 0.2);
+}
+
+.question .question-banner h3 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.question .question-banner .banner-text {
+    display: flex;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.question .question-banner .banner-button {
+    display: block;
+    background-color: #FD7B28;
+    width: 80px;
+    height: 28px;
+    color: white;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 14px;
+    margin-top: 12px;
+}
+
+.question .question-list {
+    display: flex;
+}
+
+.question .question-list li {
+    display: block;
+    width: 159px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+
+    transition: font-weight 0.2s;
+}
+
+.question .question-list li:hover {
+    font-weight: bold;
+}
+
+.question .question-list li a {
+    color: #333;
+}
+
+.question .question-list li:nth-child(1) {
+    background: url('../images/s_images/ser_ic01.png') 17px center no-repeat;
+    background-size: 12%;
+    padding-left: 10px;
+}
+
+.question .question-list li:nth-child(2) {
+    background: url('../images/s_images/ser_ic02.png') 10px center no-repeat;
+    background-size: 15%;
+}
+
+.question .question-list li:nth-child(3) {
+    background: url('../images/s_images/ser_ic03.png') 8px center no-repeat;
+    background-size: 16%;
 }
 
 .c2 .social {
     width: 205px;
     height: 180px;
     margin-top: 27px;
-    background-color: wheat;
+}
+
+.social .social-list {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.social .social-list li a {
+    display: block;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.social .social-list li:nth-child(1) {
+    background: url('../images/p_images/sns-insta.png') center 0 no-repeat;
+}
+
+.social .social-list li:nth-child(2) {
+    background: url('../images/p_images/sns-facebook.png') center 0 no-repeat;
+}
+
+.social .social-list li:nth-child(3) {
+    background: url('../images/p_images/sns-kakao.png') center 0 no-repeat;
+}
+
+.social .social-list li:nth-child(4) {
+    background: url('../images/p_images/sns-naver.png') center 0 no-repeat;
 }
 
 /* 푸터 영역 CSS */
@@ -670,19 +811,54 @@
     height: 422px;
     padding: 25px 0 30px 0;
     border-top: 1px solid var(--b-color);
-    background-color: yellowgreen;
 }
 
 .footer .copyright {
     display: flex;
     height: 232px;
     margin-bottom: 10px;
-    background-color: aquamarine;
 }
 
 .footer .copyright .business {
     width: 668px;
-    background-color: brown;
+}
+
+.footer .copyright .tos .tos-list {
+    display: flex;
+}
+
+.tos-list li a {
+    color: #333;
+    font-size: 15px;
+    background: url('../images/s_images/f_menu_line.gif') right center no-repeat;
+    padding-right: 13px;
+    margin-right: 13px;
+}
+
+.tos-list li:nth-child(2) a {
+    color: black;
+    font-weight: bold;
+}
+
+.tos-list li:nth-child(3) a {
+    background: none;
+}
+
+.copyright .business address {
+    margin-top: 20px;
+    font-size: 12px;
+    font-style: normal;
+    color: #333;
+    line-height: 23px;
+    letter-spacing: -1px;
+}
+
+.copyright .business .noti-message {
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+    line-height: 23px;
+    letter-spacing: -0.5px;
 }
 
 .footer .copyright .guarantee {
@@ -690,11 +866,41 @@
     height: 140px;
     padding: 0 0 23px 23px;
     border-left: 1px solid var(--b-color);
-    background-color: cornflowerblue;
+}
+
+.copyright .guarantee .guarantee-title {
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+}
+
+.copyright .guarantee .guarantee-body {
+    font-size: 12px;
+    letter-spacing: -1.1px;
+    line-height: 20px;
+    padding-top: 15px;
+}
+
+.copyright .guarantee .guarantee-check {
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    padding-top: 8px;
+}
+
+.guarantee .guarantee-check a {
+    color: #333;
+    padding-right: 25px;
+    background: url('../images/s_images/ic_sm_arr.png') right center no-repeat;
 }
 
 .footer .banner {
     height: 140px;
-    padding: 20px 0 20px 0;
-    background-color: darkgray;
+    background-color: #EEE;
+    text-align: center;
+}
+
+.footer .banner img {
+    display: block;
+    margin: 0 auto;
 }
